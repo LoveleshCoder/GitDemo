@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [Loan Department]">
+  <listeners>
+    <listener class-name="test.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Personal Loan(failed)">
+    <parameter name="URL" value="www.HomeLoan.com"/>
+    <classes>
+      <class name="test.Day1">
+        <methods>
+          <include name="afterTest"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- test.Day1 -->
+    </classes>
+  </test> <!-- Personal Loan(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->
